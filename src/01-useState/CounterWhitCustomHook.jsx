@@ -1,7 +1,7 @@
-import { useCounter } from "./hooks/useCounter"
+import { useCounter } from "../hooks/useCounter"
 
 
-export const HooksApp = () => {
+export const CounterWhitCustomHook = () => {
   const valor = 0
   const {counter, increment,decrement, reset} = useCounter( valor )
   return (
