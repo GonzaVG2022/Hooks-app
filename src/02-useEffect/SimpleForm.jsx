@@ -42,7 +42,7 @@ export const SimpleForm = () => {
   />
   <input 
   type="email" 
-  className="form-control mt-2"
+  className="form-control mt-2 mb-2"
 //   placeholder="gonzagargantini20@gmail.com"
   name="email"
   value={ email }
@@ -51,7 +51,7 @@ export const SimpleForm = () => {
   />
 
   {
-    (username === 'strider2') && <Message/>
+    (username === 'FlavioVG') && <Message/>
   }
   
   </>
