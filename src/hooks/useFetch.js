@@ -25,7 +25,7 @@ export const useFetch = ( url ) => {
             hasError: null
         })
 
-        console.log(data.results[0].status)
+        // console.log(data.results)
     }
 
     useEffect(() => {
