@@ -6,16 +6,17 @@ import { MultipleCustomHooks } from './03-examples/MultipleCustomHooks'
 // import { SimpleForm } from './02-useEffect/SimpleForm'
 // import { FormWithCustomHook } from './02-useEffect/FormWithCustomHook'
 // import { Counter } from './Counter'
+import './08-useReducer/intro-reducer';
 
 
 
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  // <React.StrictMode>
-  // <FormWithCustomHook/>
-  <MultipleCustomHooks/>
-    // <SimpleForm/>
-    // <CounterWhitCustomHook/> 
-  //  <Counter/>
-  // </React.StrictMode>,
-)
+// ReactDOM.createRoot(document.getElementById('root')).render(
+//   // <React.StrictMode>
+//   // <FormWithCustomHook/>
+//   <MultipleCustomHooks/>
+//     // <SimpleForm/>
+//     // <CounterWhitCustomHook/> 
+//   //  <Counter/>
+//   // </React.StrictMode>,
+// )

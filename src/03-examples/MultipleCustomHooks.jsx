@@ -25,7 +25,7 @@ export const MultipleCustomHooks = () => {
             disabled= { isLoading }
             onClick={ () => increment(1) }
     >
-        Next Quote
+        Next Image
     </button>
 
     </>
