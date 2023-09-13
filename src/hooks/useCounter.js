@@ -5,13 +5,13 @@ export const useCounter = ( valor = 1 ) => {
   
     const [counter, setCounter] = useState(valor)
 
-    const increment = (valor) => {
+    const increment = (valor = 1) => {
 
-        setCounter( counter + valor );
+        setCounter( (current) =>  current + valor );
     };
-    const decrement = (valor) => {
+    const decrement = (valor = 1) => {
         if( counter === 0 )return
-        setCounter( counter - valor );   
+        setCounter( (current) =>  current - valor );   
     }
     const reset = () => {
 
