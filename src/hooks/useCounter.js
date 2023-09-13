@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 
-export const useCounter = ( valor=1 ) => {
+export const useCounter = ( valor = 1 ) => {
   
     const [counter, setCounter] = useState(valor)
 
