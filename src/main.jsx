@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './style.css'
 import { BrowserRouter } from 'react-router-dom'
-// import { MultipleCustomHooks } from './03-examples/MultipleCustomHooks'
+ import { MultipleCustomHooks } from './03-examples/MultipleCustomHooks'
 // import { CounterWhitCustomHook } from './01-useState/CounterWhitCustomHook'
 // import { SimpleForm } from './02-useEffect/SimpleForm'
 // import { FormWithCustomHook } from './02-useEffect/FormWithCustomHook'
@@ -21,13 +21,13 @@ import { MainApp } from './09-useContext/MainApp'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     
-    <MainApp/>
-  
+    {/* <MainApp/> */}
+    <MultipleCustomHooks/>
   </BrowserRouter>
   
   // <React.StrictMode>
   // <FormWithCustomHook/>
-  // <MultipleCustomHooks/>
+  // 
   // <Padre/>
   // <TodoApp/>
   // <Layout/>

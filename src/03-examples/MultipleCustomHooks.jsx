@@ -7,10 +7,8 @@ export const MultipleCustomHooks = () => {
     const {counter, increment} = useCounter()
     const { data, isLoading, hasError } = useFetch(`https://rickandmortyapi.com/api/character/?page=${ counter }`)
     
-    // console.log({data, isLoading, hasError})
-
-     const  { results }  = !!data && data
-      
+    const  { results }  = !!data && data
+    const {image, name} = !!results && results[0]
     return (
     <>
     <h1>Rick and Morty</h1>
@@ -18,7 +16,10 @@ export const MultipleCustomHooks = () => {
     {
         isLoading 
         ? <LoadingQuote/>
-        : <Quote results={results} />
+        : <Quote 
+            image = {image}
+            name = {name}
+          />
     }
     
     <button className="btn btn-primary"
