@@ -26,7 +26,7 @@ describe('Pruebas en <MultipleCustomHooks>', () => {
         
         
         useFetch.mockReturnValue({
-            data: [{image: '' , name: 'Flavio'}],
+            data: {results:[{ image: 'url', name: 'Flavio'  }]},
             isLoading: false,
             hasError: null 
         });
