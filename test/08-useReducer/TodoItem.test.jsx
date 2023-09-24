@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import { TodoItem } from "../../src/08-useReducer/TodoItem";
 
-describe('Pruebas en <TodoItem/>', () => { 
+describe('Test the <TodoItem/>', () => { 
 
     const todo = {
         id: 1,
@@ -14,7 +14,7 @@ describe('Pruebas en <TodoItem/>', () => {
 
     beforeEach( () => jest.clearAllMocks() );
 
-    test('debe mostrar el Todo Pendiente de completar', () => { 
+    test('should show All Pending Completion', () => { 
         
         render( <TodoItem 
                 todo={ todo }
@@ -33,7 +33,7 @@ describe('Pruebas en <TodoItem/>', () => {
         
         // screen.debug()
      });
-     test('debe mostrar el Todo completado', () => { 
+     test('should show All completed', () => { 
         
         todo.done = true;
 
@@ -53,7 +53,7 @@ describe('Pruebas en <TodoItem/>', () => {
         // screen.debug()
      });
      
-     test('span debe llamar el ToggleTodo cuando se hace click', () => { 
+     test('span should call the ToggleAll when clicked', () => { 
         render( <TodoItem 
             todo={ todo }
             onToggleTodo={ onToggleTodoMock } 
@@ -66,7 +66,7 @@ describe('Pruebas en <TodoItem/>', () => {
         expect( onToggleTodoMock ).toHaveBeenCalledWith( todo.id );
       });
 
-      test('span debe llamar el deleteTodo cuando se hace click', () => { 
+      test('pan should call the DeleteTodo when clicked', () => { 
         render( <TodoItem 
             todo={ todo }
             onToggleTodo={ onToggleTodoMock } 

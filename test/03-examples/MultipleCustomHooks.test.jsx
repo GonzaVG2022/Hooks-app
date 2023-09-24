@@ -4,9 +4,9 @@ import { useFetch } from "../../src/hooks/useFetch";
 
 
 jest.mock('../../src/hooks/useFetch')
-describe('Pruebas en <MultipleCustomHooks>', () => { 
+describe('Test the <MultipleCustomHooks>', () => { 
   
-    test('debe mostrar el componente correctamente', () => { 
+    test('must display the component correctly', () => { 
        
         useFetch.mockReturnValue({
             data: null,
@@ -22,7 +22,7 @@ describe('Pruebas en <MultipleCustomHooks>', () => {
         expect( nextButton.disabled).toBeTruthy();
         screen.debug();
      });
-    test('debe mostrar un Quote', () => { 
+    test('must show a quote', () => { 
         
         
         useFetch.mockReturnValue({

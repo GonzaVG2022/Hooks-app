@@ -1,6 +1,6 @@
 import { todoReducer } from "../../src/08-useReducer/todoReducer";
 
-describe('Pruebas en todoReducer', () => { 
+describe('Test the todoReducer', () => { 
     
     const initialState = [{
             id:1,
@@ -8,7 +8,7 @@ describe('Pruebas en todoReducer', () => {
             done: false
         }];
 
-    test('debe regresar el estado inicial', () => { 
+    test('must return to the initial state', () => { 
         
         const newState = todoReducer( initialState, {} );
         expect( newState ).toBe( initialState );
@@ -17,13 +17,13 @@ describe('Pruebas en todoReducer', () => {
 
      });
 
-     test('debe de agregar un TODO', () => { 
+     test('you must add a TODO', () => { 
         
         const action = {
             type: '[TODO] Add Todo', 
             payload: {
                 id: 2,
-                description: 'Nuevo todo #2',
+                description: 'New todo #2',
                 done: false
             }
         };
@@ -32,7 +32,7 @@ describe('Pruebas en todoReducer', () => {
         expect( newState ).toContain( action.payload )
       });
 
-      test('debe eliminar un TODO', () => { 
+      test('you must delete a TODO', () => { 
         
         const action = {
             type : '[TODO] Remove Todo',
@@ -41,7 +41,7 @@ describe('Pruebas en todoReducer', () => {
         const newState = todoReducer( initialState, action );
         expect( newState.length ).toBe( 0 );
        });
-       test('debe de realizar el Toggle del todo', () => { 
+       test('You must complete the Toggle', () => { 
         const action = {
             type : '[TODO] Toggle Todo',
             payload: 1

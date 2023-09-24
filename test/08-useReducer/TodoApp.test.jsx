@@ -4,7 +4,7 @@ import { TodoApp } from "../../src/08-useReducer/TodoApp";
 import { useTodos } from "../../src/hooks/useTodos";
 
 jest.mock('../../src/hooks/useTodos')
-describe('Pruebas en <TodoApp/>', () => { 
+describe('Test the <TodoApp/>', () => { 
     
     useTodos.mockReturnValue({
         todos:[{
@@ -23,8 +23,8 @@ describe('Pruebas en <TodoApp/>', () => {
         handleDeleteTodo: jest.fn(), 
         handleToggleTodo: jest.fn()
     });
-    test('debe de mostrar el componente correctamente', () => { 
+    test('must display the component correctly', () => { 
         render( <TodoApp /> );
-        screen.debug();
+        // screen.debug();
      });
  }); 
