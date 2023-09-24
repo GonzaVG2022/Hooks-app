@@ -13,15 +13,15 @@ import { BrowserRouter } from 'react-router-dom'
 // import { Padre } from './07-tarea-memo/Padre';
 // import { Layout } from './05-useLayoutEffect/Layout'
  import { TodoApp } from './08-useReducer/TodoApp'
-// import { MainApp } from './09-useContext/MainApp'
+import { MainApp } from './09-useContext/MainApp'
 
 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-     <TodoApp/>
-    {/* <MainApp/> */}
+     {/* <TodoApp/> */}
+    <MainApp/>
     {/* <MultipleCustomHooks/> */}
   </BrowserRouter>
   
